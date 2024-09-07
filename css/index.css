@@ -1,3 +1,13 @@
+@font-face {
+    font-family: JetMed;
+    src: url('/font/webfonts/JetBrainsMono-Medium.woff2'),
+        url('/font/webfonts/JetBrainsMono-Bold.woff2')
+}
+
+* {
+    font-family: JetMed;
+}
+
 body {
     background-color: rgba(40, 175, 0, 0.7);
     font-family: monospace;
@@ -5,6 +15,7 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 p {
@@ -19,4 +30,13 @@ h1 {
 
 h2 {
     font-size: 32px;
+}
+
+h3 {
+    position: relative;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
 }
