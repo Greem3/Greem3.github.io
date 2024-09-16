@@ -4,13 +4,16 @@
         url('/font/webfonts/JetBrainsMono-Bold.woff2')
 }
 
+:root {
+    --variable: 0;
+}
+
 * {
     font-family: JetMed;
 }
 
 body {
     background-color: rgba(40, 175, 0, 0.7);
-    font-family: monospace;
 }
 
 a {
@@ -23,6 +26,7 @@ p {
 }
 
 h1 {
+    display: none;
     font-size: 64px;
     align-content: center;
     text-align: center;
@@ -33,10 +37,41 @@ h2 {
 }
 
 h3 {
-    position: relative;
-    justify-content: center;
+    font-size: 20px;
 }
 
 ul {
     list-style: none;
+}
+
+#user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 20px;
+}
+
+#projects li a,
+#projects li h3 {
+    color: rgba(248, 248, 255, 0.8);
+}
+
+#projects li p {
+    color: white;
+}
+
+#list_projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-element {
+    background-color: green;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
 }

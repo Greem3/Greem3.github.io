@@ -6,26 +6,38 @@
     <title>Greem Portfolio</title>
     <link rel="stylesheet" href="css/index.css"/>
     <link rel="icon" href="img/Greem.png"/>
-    <script src="js/index.js"></script>
-</head>
+    <script src="js/index.js" defer></script>
+</head> 
 <body>
-    <h1>Greem</h1>
+
+    <div id="user">
+        <img id="greemimg" src="img/Greem.png" alt="My Profile Image" width="100" height="100">
+        <h1 id="greemtext">Greem</h1>
+    </div>
 
     <section id="aboutme" class="PagSection">
         <h2>About me</h2>
         <ul>
             <li>
-                <p>Im a student</p>
+                <p>I'm a student and i speak spanish, i like programming and play videogames</p>
             </li>
         </ul>
     </section>
 
     <section id="projects" class="PagSection">
         <h2>My Projects</h2>
-        <ul>
-            <li>
-                <a href="https://github.com/Greem3/NewSimpleSQL" target="_blank"><h3>NewSimpleSQL</h3></a>
-                <p>NewSimpleSQL is a python library to make more easy use SQL</p>
+        <ul id="list_projects">
+            <li class="project-element">
+                <a href="https://github.com/Greem3/NewSimpleSQL" target="_blank"><h3 class="project-title">NewSimpleSQL</h3></a>
+                <p>NewSimpleSQL is a python library to make more easy use SQL. easy to understand and easy to write.</p>
+            </li>
+            <li class="project-element">
+                <a href="" target="_blank"><h3 class="project-title">DIMP Bot</h3></a>
+                <p>DIMP is a discord bot about math problems, you can publish your own problems and resolve problems from other people.</p>
+            </li>
+            <li class="project-element">
+                <a href="" target="_blank"><h3 class="project-title">Darkest Tournaments Bot</h3></a>
+                <p>Darkest Tournaments is a discord bot and that use the API of the page challonge to make tournaments in discord and automatize somethings.</p>
             </li>
         </ul>
     </section>
